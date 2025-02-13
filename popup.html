@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple OneTab</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #4dabf7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3b8fd9;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px;
+      border-bottom: 1px solid #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <button id="saveTabs">Save All Tabs</button>
+  <button id="saveAndCloseTabs">Save and Close Tabs</button>
+  <button id="restoreTabs">Restore Last Session</button>
+  <ul id="savedSessionsList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
